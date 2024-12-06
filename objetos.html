@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Gravity Falls</title>  
+
+        <!-- CSS interno -->
+        <style>
+            /* Centraliza tudo usando Flexbox */
+            body {
+                display: flex;           /* Ativa flexbox */
+                flex-direction: column;  /* Organiza em coluna */
+                align-items: center;     /* Centraliza horizontalmente */
+                min-height: 100vh;       /* Ocupa toda a altura da janela */
+                margin: 0;               /* Remove margens padrão */
+                padding: 0;              /* Remove espaçamentos padrão */
+                margin-block: 20px;
+                background-color: #c5846b;  /* Cor de fundo da página */
+            }
+
+            div {
+                margin-bottom: 30px; /* Define espaço abaixo do contêiner */
+            }
+
+            p {
+                font-size: 25px; /* Aumenta o tamanho da fonte para 18px */
+                max-width: 100%;  /* Deixa o parágrafo ocupar toda a largura disponível */
+                margin-left: 20px; /* Adiciona um espaço entre a imagem e o texto */
+                margin-right: 20px;
+                text-align: left; /* Alinha o texto de forma justificada */
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+            img {
+                width: 500px;  /* Largura fixa */
+                height: 200px; /* Altura fixa */
+                object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+                margin-right: 20px;       /* Adiciona espaço entre a imagem e o texto */
+            }
+
+            /* Estiliza o link */
+            .link {
+                text-decoration: none;          /* Remove sublinhado */
+                background-color: #d44835;      /* Cor de fundo */
+                color: white;                   /* Cor do texto */
+                padding: 10px 20px;             /* Espaçamento interno */
+                border-radius: 5px;             /* Borda arredondada */
+                font-family: Arial, sans-serif; /* Fonte */
+                font-size: 16px;                /* Tamanho do texto */
+                margin-bottom: 20px;            /* Espaço abaixo do link */
+                margin-top: 20px;
+                margin: 0 20px; /* Aumenta o espaçamento entre os links */
+            }
+
+            .link:hover {
+                background-color: #db6464;      /* Destaque ao passar o mouse */
+            }
+
+            /* Estiliza a imagem */
+            .logo {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 200px;
+                height: auto;
+            }
+
+            /* Estiliza a seção com imagem e texto ao lado */
+            .personagens-container {
+                display: flex;              /* Organiza imagem e texto em linha */
+                flex-direction: column;     /* Alinha os itens verticalmente (empilhados) */
+                margin-top: 20px;           /* Espaço entre o título e o conteúdo */
+                width: 90%;                 /* Garante que a div ocupe a largura da página, mas não toda */
+                margin-left: 20px;          /* Define a distância da imagem em relação à borda esquerda */
+                align-items: center;        /* Centraliza verticalmente */
+                background-color: #f0f0f0;  /* Cor de fundo do contêiner */
+                padding: 10px;
+                height: auto;               /* Ajusta a altura conforme o conteúdo */
+            }
+
+            /* Estiliza a imagem para que ocupe o espaço sem ser cortada */
+            .personagens-container img {
+                max-width: 30%;         /* A imagem ocupa toda a largura disponível */
+                height: auto;            /* A altura se ajusta proporcionalmente */
+                object-fit: contain;     /* Faz a imagem se ajustar sem distorcer ou cortar */
+                margin-bottom: 20px;     /* Adiciona um espaço entre a imagem e o texto */
+            }
+
+            /* Estiliza o texto dentro da personagem */
+            .personagens-container p {
+                margin: 10px 0;  /* Espaçamento entre os parágrafos */
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <!-- Link centralizado -->
+            <a href="index.html" class="link">Sobre</a>
+            <a href="personagens.html" class="link">Personagens</a>
+            <a href="informacoes.html" class="link">Informações</a>
+        </div>
+        
+        <div>
+            <!-- Imagem do logo centralizada abaixo do link -->
+            <img src="Imagens/logo.png" class="logo">
+        </div>
+        <div>
+            <h1>Objetos</h1>
+        </div>
+        <div class="personagens-container">
+            <img src="Imagens/memoryGun.webp">
+            <p>A arma de apagar memórias, ou Memory Gun, é um dispositivo intrigante e importante no enredo de Gravity Falls. É usada para apagar lembranças específicas de uma pessoa, desempenhando um papel crucial em momentos de tensão e mistério na série. O conceito de apagar memórias reflete os temas centrais da série, como a preservação da verdade, a manipulação da percepção e o impacto das lembranças.</p>
+        </div>
+    
+    </body>
+</html>
